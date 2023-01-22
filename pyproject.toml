@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dash_template"
+version = "0.0.1"
+authors = [
+    {name = "Jason Lund", email = "jsnlund@outlook.com"}
+]
+description = "Template and demo features for a Plotly Dash Dashboard"
+keywords = ["Python", "Plotly", "Dash", "Visualization"]
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">=3.7"
+classifiers = [
+    "Framework :: Dash",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    'dash',
+    'dash_bootstrap_components',
+    'pandas',
+]
+
+
+[project.optional-dependencies]
+tests = [
+  'pytest'
+]
+
+[project.urls]
+Home = "https://github.com/jsnlund/dash_template"
